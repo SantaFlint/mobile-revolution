@@ -131,10 +131,11 @@
             </div>
         </section>
         <section class="reviews">
-            <div class="reviews__wrapper">
+            <div class="reviews__wrapper slider">
                 <h2 class="reviews__title">Отзывы о нас</h2>
-                <div class="reviews__list">
-                    <blockquote class="reviews__item">
+                <a class="reviews__write button" href="form.html">Оставить свой</a>
+                <div class="reviews__list slider__list">
+                    <blockquote class="reviews__item slider__item">
                         <img class="reviews__author-image" src="img/picture-travis-mobile@x1.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
                         <div class="reviews__author-info">
                             <cite class="reviews__author-name">Трэвис Баркер</cite>
@@ -143,7 +144,7 @@
                             </p>
                         </div>
                     </blockquote>
-                    <blockquote class="reviews__item">
+                    <blockquote class="reviews__item slider__item">
                         <img class="reviews__author-image" src="img/picture-travis-mobile@x1.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
                         <div class="reviews__author-info">
                             <cite class="reviews__author-name">Трэвис Баркер</cite>
@@ -152,7 +153,7 @@
                             </p>
                         </div>
                     </blockquote>
-                    <blockquote class="reviews__item">
+                    <blockquote class="reviews__item slider__item">
                         <img class="reviews__author-image" src="img/picture-travis-mobile@x1.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
                         <div class="reviews__author-info">
                             <cite class="reviews__author-name">Трэвис Баркер</cite>
@@ -161,10 +162,51 @@
                             </p>
                         </div>
                     </blockquote>
+                    <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+                    <button class="reviews__next" type="button">Следующий отзыв</button>
                 </div>
+                <p class="reviews__toggles slider__toggles">
+                    <button class="slider__toggle slider__toggle--current" type="button">1</button>
+                    <button class="slider__toggle" type="button">2</button>
+                    <button class="slider__toggle" type="button">3</button>
+                </p>
             </div>
         </section>
     </main>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <div class="page-footer__contacts contacts">
+                <b class="contacts__title">Революция танца</b>
+                <p class="contacts__text">
+                    г. Благовещенск, ул. Политехническая 3
+                    <a class="contacts__phone" href="tel:+79638001940">
+                        <span class="contacts__phone-mobile">Тел.:</span>+7 (963) 800-19-40
+                    </a>
+                </p>
+            </div>
+            <div class="page-footer__socials social">
+                <b class="social__title">Давайте дружить!</b>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UCF4tVT-jNXHGHyLLALIeQwA">
+                        Мы на YouTube</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--tiktok" href="https://vm.tiktok.com/ZSEaq3fQ/">
+                        Мы в TikTok</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--instagram" href="https://instagram.com/revolution_of_dance.blag?igshid=1sb0gz5w77gua">
+                        Мы в Instgram</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="page-footer__copyright">
+                <p class="page-footer__copyright--text">©2021 Революция танца</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
