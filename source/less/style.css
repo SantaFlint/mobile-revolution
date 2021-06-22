@@ -1,10 +1,94 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+}
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
 .page {
-  background: #403A3A;
+  height: 100%;
+  font-size: 18px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  line-height: 27px;
+}
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  background-color: #292929;
+  color: #000000;
+}
+.page {
+  height: 100%;
+  font-size: 18px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  line-height: 27px;
+}
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  background-color: #292929;
+  color: #000000;
+}
+.page {
+  height: 100%;
+  font-size: 18px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  line-height: 27px;
+}
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  background-color: #292929;
+  color: #000000;
+}
+.page {
+  height: 100%;
+  font-size: 18px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  line-height: 27px;
+}
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  background-color: #292929;
+  color: #000000;
 }
