@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 }
-
 .page-footer__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -11,23 +10,19 @@
   min-width: 320px;
   min-height: 392px;
 }
-
 .page-footer__contacts {
   grid-column: 1 / 4;
   grid-row: 2 / 3;
   min-width: 320px;
   min-height: 244px;
 }
-
 .page-footer__socials {
   min-width: 320px;
   height: 100px;
 }
-
 .social__item {
   border: 1px solid #4A4A4A;
 }
-
 .page-footer__copyright {
   grid-column: 1 / 4;
   grid-row: 4 / 5;
@@ -37,13 +32,12 @@
   height: 24px;
   left: 20px;
   bottom: 20px;
-
   font-family: PT Sans Narrow;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 24px;/* or 171% */
+  line-height: 24px;
+  /* or 171% */
   /* Gray 4 */
-
   color: #bdbdbd;
 }
