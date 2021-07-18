@@ -1,27 +1,45 @@
 .page-footer {
   margin: 0;
   padding: 0;
-}
 
-.page-footer__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 33px 211px 100px 48px;
-  position: absolute;
-  min-width: 320px;
-  min-height: 392px;
-}
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 33px 211px 100px 48px;
+    position: absolute;
+    min-width: 320px;
+    min-height: 392px;
+  }
 
-.page-footer__contacts {
-  grid-column: 1 / 4;
-  grid-row: 2 / 3;
-  min-width: 320px;
-  min-height: 244px;
-}
+  &__contacts {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    min-width: 320px;
+    min-height: 244px;
+  }
 
-.page-footer__socials {
-  min-width: 320px;
-  height: 100px;
+  &__socials {
+    min-width: 320px;
+    height: 100px;
+  }
+
+  &__copyright {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    /* © */
+    position: absolute;
+    width: 160px;
+    height: 24px;
+    left: 20px;
+    bottom: 20px;
+    font-family: PT Sans Narrow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;/* or 171% */
+    /* Gray 4 */
+    color: #bdbdbd;
+  }
 }
 
 .social__item {
@@ -32,35 +50,15 @@
   width: 36px;
   height: 36px;
 
-    &--youtube {
-      background: url('source/icons/icon-youtube.svg') no-repeat 50% 50%;
-    }
+  &--youtube {
+    background: url(/icons/icon-youtube.svg) no-repeat 50% 50%;
+  }
 
-    &--tiktok {
-      background: url('source/icons/TikTok-Negative.svg') no-repeat 50% 50%;
-    }
+  &--tiktok {
+    background: url(/icons/TikTok-Negative.svg) no-repeat 50% 50%;
+  }
 
-    &--instagram {
-      background: url('source/icons/instagram-icon.svg') no-repeat 50% 50%;
-    }
-}
-
-.page-footer__copyright {
-  grid-column: 1 / 4;
-  grid-row: 4 / 5;
-  /* © */
-  position: absolute;
-  width: 160px;
-  height: 24px;
-  left: 20px;
-  bottom: 20px;
-
-  font-family: PT Sans Narrow;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;/* or 171% */
-  /* Gray 4 */
-
-  color: #bdbdbd;
+  &--instagram {
+    background: url(/icons/instagram-icon.svg) no-repeat 50% 50%;
+  }
 }
