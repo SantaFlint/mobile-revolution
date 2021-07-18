@@ -23,6 +23,19 @@
 .social__item {
   border: 1px solid #4A4A4A;
 }
+.social__link {
+  width: 36px;
+  height: 36px;
+}
+.social__link--youtube {
+  background: url('source/icons/icon-youtube.svg') no-repeat 50% 50%;
+}
+.social__link--tiktok {
+  background: url('source/icons/TikTok-Negative.svg') no-repeat 50% 50%;
+}
+.social__link--instagram {
+  background: url('source/icons/instagram-icon.svg') no-repeat 50% 50%;
+}
 .page-footer__copyright {
   grid-column: 1 / 4;
   grid-row: 4 / 5;
