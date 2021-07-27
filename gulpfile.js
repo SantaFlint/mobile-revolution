@@ -21,9 +21,6 @@ const styles = function styles() {
         csso
       ]))
       .pipe(sourcemap.write("."))
-      .pipe(rename({
-        suffix: '.min'
-    }))
       .pipe(gulp.dest("source/css"))
       .pipe(sync.stream());
 };
@@ -57,7 +54,6 @@ var scripts = function scripts() {
 };
 
 exports.scripts = scripts;
-
 
 // Server
 
