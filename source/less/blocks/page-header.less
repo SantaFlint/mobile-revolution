@@ -1,6 +1,18 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-  background-color: @darkgrey;
-  color: @white;
+	display: flex;
+	flex-direction: column;
+	background-color: @darkgrey;
+	color: @white;
+}
+
+.page-header__logo {
+	height: 85px;
+	outline: 5px sold rgba(255, 0, 0, 0.8);
+	outline-offset: -5px;
+
+	@media (min-width: @tablet-width){
+		order: 2;
+		height: 400px;
+	}
+
 }
