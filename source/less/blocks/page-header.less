@@ -1,21 +1,42 @@
 .page-header {
-	display: flex;
+  display: flex;
 	flex-direction: column;
 	background-color: @darkgrey;
 	color: @white;
 }
 
 .page-header__logo {
-	height: 85px;
+  display: flex;
+	height: 80px;
   width: 100%;
-  margin: 0;
+  margin: auto;
+  margin-top: 5px;
+  padding: 0;
+  position: relative;
+  width: 320px;
+  height: 80px;
+  left: calc(50% - 320px/2);
+  top: calc(50% - 80px/2);
+
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
+  text-transform: uppercase;
+
+
+  align-items: center;//vertical
+  justify-content: center;//horizontal
   color: #FF0302;
 
-	border: 5px sold rgba(255, 0, 0, 0.8);
-
+	border: 1px solid #03FF02;
+  outline-offset: -5px;
 
 	@media (min-width: @tablet-width){
-		order: 2;
+
+    order: 2;
 		height: 400px;
 	}
 }
