@@ -1,9 +1,16 @@
 .site-list {
-  list-style-type: none;
   outline: 5px solid green;
   outline-offset: -5px;
 }
 
-.site-list__item {
-  color: #FFFFFF;
+@media (min-width: @tablet-width) {
+  .site-list {
+    width: 570px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 780px;
+  }
 }
