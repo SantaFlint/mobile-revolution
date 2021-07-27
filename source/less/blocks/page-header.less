@@ -9,14 +9,14 @@
   display: flex;
 	height: 80px;
   width: 100%;
-  margin: auto;
+  margin: 0;
   margin-top: 5px;
   padding: 0;
   position: relative;
   width: 320px;
-  height: 80px;
+
   left: calc(50% - 320px/2);
-  top: calc(50% - 80px/2);
+
 
   font-family: Comfortaa;
   font-style: normal;
@@ -31,12 +31,16 @@
   justify-content: center;//horizontal
   color: #FF0302;
 
-	border: 1px solid #03FF02;
-  outline-offset: -5px;
+	// outline: 1px solid #03FF02;
+  // outline-offset: -5px;
 
 	@media (min-width: @tablet-width){
 
     order: 2;
 		height: 400px;
+	}
+
+  @media (min-width: @desktop-width){
+    height: 648px;
 	}
 }
