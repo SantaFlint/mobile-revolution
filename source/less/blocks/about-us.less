@@ -1,18 +1,21 @@
 .about-us {
   min-height: 580px;
-  background-color: @darkwhite;
+  background-color: @darkgrey;
 }
 
 .about-us__wrapper {
   margin: 0;
   padding: 0;
+
 }
 
 .about-us__header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; //vertical
   text-align: center;
+  color: @white;
 }
 
 .about-us__slogan {
@@ -29,6 +32,14 @@
   font-style: normal;
   font-size: 20px;
   line-height: 30px;
+  height: 300px;
+  min-width: 320px;
+  align-items: center; //vertical
+  justify-content: center;//horizontal
+
+  @media (min-width: @tablet-width) {
+    height: 215px;
+  }
 }
 
 .about-us__teachers {
