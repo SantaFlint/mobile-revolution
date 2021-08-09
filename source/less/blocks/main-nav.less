@@ -1,14 +1,18 @@
 .main-nav {
-  outline: 5px solid red;
-  outline-offset: -3px;
+  position: relative;
+  width: auto;
+  // outline: 5px solid red;
+  // outline-offset: -3px;
+  min-height: 51px;
+  background-color: @lightred;
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 5px solid yellow;
-  outline-offset: -5px;
+  // outline: 5px solid yellow;
+  // outline-offset: -5px;
 }
 
 .main-nav__list a {
@@ -25,7 +29,21 @@
   }
 
   .main-nav__toggle {
-    display: none;
+    display: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 70px;
+    height: 50px;
+    background-color: @darkred;
+    cursor: pointer;
+    border: none;
+
+    &:hover,
+    &:active {
+      background-color: @lightred;
+    }
   }
 }
 
