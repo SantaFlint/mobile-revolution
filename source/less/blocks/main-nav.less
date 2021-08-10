@@ -1,14 +1,54 @@
 .main-nav {
-  outline: 5px solid red;
-  outline-offset: -3px;
+  position: relative;
+  width: auto;
+  // outline: 5px solid red;
+  // outline-offset: -3px;
+  min-height: 51px;
+  background-color: @lightred;
+}
+
+.main-nav__toggle {
+  display: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-color: @darkred;
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:active {
+    background-color: @activered;
+  }
+}
+
+.main-nav__closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: @white;
+  box-shadow: 0 8px 0 0 #FFFFFF, 0 16px 0 0 #FFFFFF;
+}
+
+.main-nav__closed .main-nav__toggle:active::before {
+  background-color: fade(@white, 30%);
+  box-shadow:
+    0 8px 0 0 fade(@white, 30%),
+    0 16px 0 0 fade(@white, 30%);
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 5px solid yellow;
-  outline-offset: -5px;
+  // outline: 5px solid yellow;
+  // outline-offset: -5px;
 }
 
 .main-nav__list a {
@@ -16,21 +56,17 @@
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
 
-@media (min-width: @tablet-width) {
-  .main-nav__wrapper {
+.main-nav__wrapper {
+  @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 640px;
     margin: 0 auto;
   }
 
-  .main-nav__toggle {
-    display: none;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-nav__wrapper {
+  @media (min-width: @desktop-width) {
     width: 960px;
   }
 }
+
+
