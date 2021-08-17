@@ -17,6 +17,33 @@
   line-height: 18px;
   color: @white;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 70px;
+    padding: 0;
+
+    span {
+      position: absolute;
+      opacity: 0;
+    }
+
+    &:hover .user-list__js-icon {
+      opacity: 1;
+
+      polygon {
+        fill: @lightred;
+      }
+    }
+
+    &:active .user-list__js-icon {
+      opacity: 0.3;
+
+      polygon {
+        fill: @white;
+      }
+    }
+  }
 }
 
 .user-list__js-icon {
@@ -27,4 +54,9 @@
   height: 16px;
   opacity: 0.3;
   fill: @white;
+
+  @media (min-width: @tablet-width) {
+    top: 29px;
+    left: 12px;
+  }
 }

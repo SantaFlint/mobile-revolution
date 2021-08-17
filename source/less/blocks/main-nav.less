@@ -5,26 +5,34 @@
   // outline-offset: -3px;
   min-height: 51px;
   background-color: @lightred;
+
+  @media (min-width: @tablet-width) {
+    background-color: @black;
+  }
 }
 
 .main-nav__toggle {
-  display: absolute;
+  position: absolute;
   top: 0;
   right: 0;
   left: auto;
   z-index: 2;
   display: block;
   width: 70px;
-  height: 50px;
+  height: 51px;
   background-color: @darkred;
   cursor: pointer;
   border: none;
-  outline: 5px solid yellow;
-  outline-offset: -3px;
+  // outline: 5px solid yellow;
+  // outline-offset: -3px;
 
   &:hover,
   &:active {
     background-color: @activered;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
