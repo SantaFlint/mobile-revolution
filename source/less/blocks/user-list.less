@@ -3,8 +3,28 @@
   outline-offset: -5px;
 }
 
-@media (min-width: @tablet-width) {
-  .user-list {
+.user-list {
+  @media (min-width: @tablet-width) {
     width: 90px;
   }
+}
+
+.user-list__js {
+  position: relative;
+  display: block;
+  padding: 17px 21px;
+  padding-left: 40px;
+  line-height: 18px;
+  color: @white;
+  text-decoration: none;
+}
+
+.user-list__js-icon {
+  position: absolute;
+  top: 17px;
+  left: 21px;
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+  fill: @white;
 }

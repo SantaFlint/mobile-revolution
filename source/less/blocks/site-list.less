@@ -1,16 +1,29 @@
 .site-list {
+  font-weight: bold;
   outline: 5px solid green;
   outline-offset: -5px;
-}
 
-@media (min-width: @tablet-width) {
-  .site-list {
-    width: 570px;
+  @media (min-width: @tablet-width) {
+  width: 570px;
   }
-}
 
 @media (min-width: @desktop-width) {
-  .site-list {
-    width: 780px;
+  width: 780px;
   }
 }
+
+.site-list a {
+  position: relative;
+  display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
+  font-size: 18px;
+  line-height: 24px;
+  color: @white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #D3454E;
+  border-top: 1px solid #ED616A;
+  border-bottom: 1px solid #B7454C;
+}
+
