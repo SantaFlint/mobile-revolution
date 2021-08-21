@@ -6,8 +6,9 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     width: 570px;
+    flex-grow: 1;
   }
 
   @media (min-width: @desktop-width) {
@@ -37,6 +38,21 @@
       }
     }
   }
+
+
+  @media (min-width: @desktop-width) {
+    &:hover {
+      color: @black;
+      background-color: @white;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+
+      background-color: @white;
+      opacity: 1;
+    }
+  }
 }
 
 .site-list__item a[href] {
@@ -52,6 +68,20 @@
 
       background-color: @black;
       opacity: 0.3;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:hover {
+      color: @black;
+      background-color: @white;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+
+      background-color: @white;
+      opacity: 1;
     }
   }
 }

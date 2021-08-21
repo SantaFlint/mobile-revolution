@@ -1,12 +1,15 @@
 .user-list {
-  outline: 5px solid blue;
-  outline-offset: -5px;
-}
-
-.user-list {
   @media (min-width: @tablet-width) {
-    width: 90px;
+    width: 80px;
   }
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    max-width: 160px;
+  }
+
+  // outline: 5px solid blue;
+  // outline-offset: -5px;
 }
 
 .user-list__js {
@@ -44,6 +47,48 @@
       }
     }
   }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+
+    width: auto;
+    height: auto;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 23px;
+    padding-left: 50px;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    span {
+      position: static;
+      opacity: 1;
+    }
+
+    &:hover {
+      color: @black;
+
+      background-color: @white;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+
+      background-color: @white;
+    }
+
+    &:active .user-list__js-icon {
+      opacity: 0.3;
+
+      polygon {
+        fill: @black;
+      }
+    }
+  }
 }
 
 .user-list__js-icon {
@@ -52,7 +97,7 @@
   left: 21px;
   width: 16px;
   height: 16px;
-  opacity: 0.3;
+  opacity: 0.6;
   fill: @white;
 
   @media (min-width: @tablet-width) {
