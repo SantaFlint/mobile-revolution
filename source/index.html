@@ -12,8 +12,12 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="img/header-logo__mobile.svg" width="300" height="30" alt="Студия современной хореографии
+      <picture>
+        <source media="(min-width: 1200px" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px" srcset="img/logo-tablet.svg">
+        <img src="img/header-logo__mobile.svg" width="300" height="30" alt="Студия современной хореографии
             Революция танца">
+      </picture>
     </a>
     <nav class="main-nav main-nav__closed main-nav__nojs">
       <button class="main-nav__toggle" type="button">

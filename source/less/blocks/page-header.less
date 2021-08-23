@@ -23,15 +23,21 @@
     order: 2;
     height: 400px;
     background-color: @black;
-    background-image: url("../img/back-tablet.png");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% -9px;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1338px auto;
+    }
   }
 
   @media (min-width: @desktop-width){
     height: 648px;
     background-position: 50% 0;
+    background-size: cover;
   }
 }
 
