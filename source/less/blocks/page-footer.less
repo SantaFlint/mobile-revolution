@@ -1,7 +1,12 @@
 .page-footer {
+  position: relative;
   grid-row: 3 / 4;
   margin: 0;
   padding: 0;
+  outline: 5px solid rgba(0, 255, 242, 0.8);
+  outline-offset: -2px;
+  min-height: 368px;
+  bottom: 0;
 
   &__wrapper {
     display: grid;
@@ -17,6 +22,12 @@
     grid-row: 2 / 3;
     min-width: 280px;
     min-height: 244px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    bottom: 0;
+
   }
 
   &__socials {
@@ -30,7 +41,6 @@
     /* © */
     position: absolute;
     width: 160px;
-    height: 24px;
     left: 20px;
     bottom: 20px;
     font-family: "PT Sans Narrow";
@@ -40,6 +50,9 @@
     line-height: 24px;/* or 171% */
     /* Gray 4 */
     color: #bdbdbd;
+
+    outline: 5px solid rgba(0, 0, 255, 0.8);
+    outline-offset: -2px;
   }
 }
 
@@ -47,8 +60,8 @@
   /* grey back */
   position: absolute;
   min-width: 320px;
-  height: 211.08px;
-  left: 0;
+  height: 211px;
+
   background-color: @footergrey;
   bottom: 148px;
   font-size: 18px;
@@ -56,23 +69,27 @@
   font-family: PT Sans Narrow;
   font-style: normal;
   font-weight: bold;
-  color: white;
+  color: @white;
 
   &__title {
     font-weight: 700;
+    text-transform: uppercase;
   }
 
   &__text {
     font-weight: 400;
+    text-align: center;
   }
 
   &__phone {
     font-weight: 700;
     color: #bbc4c9;
-  }
-
-  &__phone-mobile {
-
+    height: 50px;
+    width: 86%;
+    border: 1px solid @lightgrey;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 12px;
   }
 }
 
