@@ -55,6 +55,9 @@
 }
 
 .site-list__item a[href] {
+  display: block;
+
+
   @media (min-width: @tablet-width) {
     &:hover {
       color: @lightred;
@@ -100,9 +103,8 @@
   border-bottom: 1px solid #b7454c;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
-    padding-top: 25px;
-    padding-bottom: 23px;
+    padding: 25px 20px 23px 20px;
+
     background: none;
     border: none;
   }

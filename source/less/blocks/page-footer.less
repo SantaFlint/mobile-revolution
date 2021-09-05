@@ -1,48 +1,39 @@
 .page-footer {
   position: relative;
-  grid-row: 3 / 4;
   margin: 0;
   padding: 0;
-  outline: 5px solid rgba(0, 255, 242, 0.8);
-  outline-offset: -2px;
   min-height: 368px;
   bottom: 0;
+  // outline: 5px solid rgba(0, 255, 242, 0.8);
+  // outline-offset: -2px;
 
   &__wrapper {
-    display: grid;
-    grid-template-rows: 33px 211px 100px 48px;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     min-width: 280px;
     min-height: 392px;
   }
 
   &__contacts {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
     min-width: 280px;
     min-height: 244px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    bottom: 0;
-
   }
 
   &__socials {
     min-width: 320px;
     height: 100px;
-    grid-row: 3 / 4;
   }
 
   &__copyright {
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
     /* © */
     position: absolute;
     width: 160px;
     left: 20px;
-    bottom: 20px;
+    bottom: 0;
     font-family: "PT Sans Narrow";
     font-style: normal;
     font-weight: bold;
@@ -51,19 +42,18 @@
     /* Gray 4 */
     color: #bdbdbd;
 
-    outline: 5px solid rgba(0, 0, 255, 0.8);
-    outline-offset: -2px;
+    // outline: 5px solid rgba(0, 0, 255, 0.8);
+    // outline-offset: -2px;
   }
 }
 
 .contacts {
   /* grey back */
-  position: absolute;
+  position: relative;
   min-width: 320px;
   height: 211px;
 
   background-color: @footergrey;
-  bottom: 148px;
   font-size: 18px;
   line-height: 27px;
   font-family: PT Sans Narrow;
@@ -98,22 +88,24 @@
   flex-direction: row;
   margin: 0;
   padding: 0;
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
   height: 100px;
   list-style: none;
-  outline: 5px solid rgba(0, 255, 98, 0.8);
-  outline-offset: -2px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
+  // outline: 5px solid rgba(0, 255, 98, 0.8);
+  // outline-offset: -2px;
 }
 
 .social__item {
+  display: block;
   border: 1px solid @lightgrey;
-  box-sizing: border-box;
-
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
 }
 
 .social__title span,
@@ -136,4 +128,9 @@
   &--instagram {
     background: url(/source/icons/instagram-icon.svg) no-repeat 50% 50%;
   }
+}
+
+.social__link img {
+  position: relative;
+  top: 32px;
 }
