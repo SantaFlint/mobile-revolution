@@ -3,9 +3,31 @@
   margin: 0;
   padding: 0;
   min-height: 368px;
+  top: 34px;
   bottom: 0;
+  background-color: @footergrey;
   // outline: 5px solid rgba(0, 255, 242, 0.8);
   // outline-offset: -2px;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: -34px;
+  //   left: 0;
+  //   z-index: 2;
+  //   width: 100%;
+  //   height: 34px;
+  //   background: url("../img/angle.svg") no-repeat 0 0 ;
+
+
+  //     @media (min-width: @tablet-width) {
+  //       display: none;
+  //     }
+  //   }
+
+    @media (min-width: @tablet-width) {
+      top: 0;
+    }
 
   &__wrapper {
     display: flex;
@@ -21,19 +43,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
-
-    // &::before {
-    // content: "";
-    // position: absolute;
-    // top: -34px;
-    // left: 0;
-    // z-index: 2;
-    // width: 100%;
-    // height: 34px;
-    // background: url("../img/angle.svg") no-repeat;
-    // background-size: 100%;
-    // }
   }
 
   &__socials {
@@ -60,13 +69,21 @@
   }
 }
 
+.footer-angle {
+  display: block;
+  min-width: 320px;
+  height: 34px;
+  outline: 5px solid rgba(0, 0, 255, 0.8);
+  outline-offset: -2px;
+  top: -34px;
+}
+
 .contacts {
   /* grey back */
   position: relative;
   min-width: 320px;
   height: 210px;
 
-  background-color: @footergrey;
   font-size: 18px;
   line-height: 27px;
   font-family: PT Sans Narrow;
@@ -77,6 +94,7 @@
 
 
   &__title {
+    font-family: "Comfortaa";
     font-weight: 700;
     text-transform: uppercase;
     width: auto;
@@ -101,6 +119,12 @@
     text-decoration: none;
     text-align: center;
     padding-top: 20px;
+    opacity: 50%;
+
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
   }
 }
 
@@ -137,6 +161,13 @@
   width: 100%;
   text-align: center;
   position: relative;
+
+  opacity: 50%;
+
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
 }
 
 .social__title span,
@@ -170,5 +201,4 @@
     width: 20px;
     height: 20px;
   }
-
 }
