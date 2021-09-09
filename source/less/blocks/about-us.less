@@ -1,6 +1,8 @@
 .about-us {
   min-height: 580px;
   background-color: @darkgrey;
+  outline: 5px solid rgba(0, 0, 255, 0.8);
+  outline-offset: -2px;
 }
 
 .about-us__wrapper {
@@ -51,10 +53,23 @@
 .teachers-list {
   position: absolute;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   list-style: none;
   background-color: @darkwhite;
   margin: 40px 20px 25px 20px;
   min-width: calc(100% - 82px);
   min-height: 515px;
   border-radius: 20px;
+
+  // @media (min-width: @tablet-width) {
+  //   flex-direction: row;
+  // }
+}
+
+.teachers-photo {
+  border-radius: 50%;
+  background: @lightred 50%;
+  width: 260px;
+  height: 260px;
 }
