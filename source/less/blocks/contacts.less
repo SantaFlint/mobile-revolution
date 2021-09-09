@@ -1,0 +1,81 @@
+.contacts {
+  /* grey back */
+  position: relative;
+  min-width: 320px;
+  height: 210px;
+
+  font-size: 18px;
+  line-height: 27px;
+  font-family: PT Sans Narrow;
+  font-style: normal;
+  font-weight: bold;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-evenly;
+  }
+
+  &__title {
+    font-family: "Comfortaa";
+    font-weight: 700;
+    text-transform: uppercase;
+    width: auto;
+    margin-top: 20px;
+
+    // outline: 5px solid rgba(0, 0, 255, 0.8);
+    // outline-offset: -2px;
+
+
+    @media (min-width: @tablet-width) {
+      width: 100vw;
+      z-index: 1;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    text-align: center;
+    // outline: 5px solid rgba(0, 0, 255, 0.8);
+    // outline-offset: -2px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #bbc4c9;
+    // border: 1px solid @lightgrey;
+    opacity: 50%;
+
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 280px;
+      z-index: 2;
+    }
+  }
+
+  &__phone {
+    font-weight: 700;
+    color: #bbc4c9;
+    height: 50px;
+    width: 280px;
+    border: 1px solid @lightgrey;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 20px;
+    opacity: 50%;
+
+    // outline: 5px solid rgba(0, 0, 255, 0.8);
+    // outline-offset: -2px;
+
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+
+    @media (min-width: @tablet-width) {
+      z-index: 4;
+    }
+  }
+}
