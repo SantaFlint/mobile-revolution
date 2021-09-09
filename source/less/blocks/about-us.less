@@ -62,9 +62,15 @@
   min-height: 515px;
   border-radius: 20px;
 
-  // @media (min-width: @tablet-width) {
-  //   flex-direction: row;
-  // }
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: @tablet-width) {
+    flex-direction: row;
+    }
+  }
+
 }
 
 .teachers-photo {
