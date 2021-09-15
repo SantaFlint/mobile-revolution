@@ -7,6 +7,28 @@
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width = device-width, initial-scale = 1.0">
   <meta name="format-detection" content="telephone=no">
+  <!-- Подключаем CSS слайдера -->
+  <!-- <link href="css/simple-adaptive-slider.css" rel="stylesheet"> -->
+  <!-- Подключаем JS слайдера -->
+  <script defer src="js/simple-adaptive-slider.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // инициализация 1 слайдера с нужными настройками
+      new SimpleAdaptiveSlider('#slider-1', {
+        loop: true,
+        autoplay: false,
+        interval: 5000,
+        swipe: true,
+      });
+      // инициализация 2 слайдера с нужными настройками
+      new SimpleAdaptiveSlider('#slider-2', {
+        loop: true,
+        autoplay: false,
+        interval: 5000,
+        swipe: true,
+      });
+    });
+  </script>
 </head>
 
 <body class="page__body">
@@ -107,165 +129,171 @@
             Мы тоже развиваемся и станвимся лучше!
           </p>
         </header>
-        <div class="about-us__teachers">
-          <ul class="teachers-list">
-            <li class="teachers-list__item">
-              <img class="teachers-photo" width="260" height="260" src="img/Ellipse108.jpg" alt="Иванов Иван"
-              srcset="img/Ellipse108@2x.jpg 2x">
-              <h3 class="teachers-name">
-                Иванов Иван
-              </h3>
-              <p class="teachers-info">
-                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
-                факта: высокое качество позиционных исследований предоставляет широкие возможности для стандартных
-                подходов. Следует отметить, что сложившаяся структура организации позволяет выполнить важные задания по
-                разработке.
-              </p>
-            </li>
-            <li class="teachers-list__item">
-              <img class="teachers-photo" width="260" height="260" src="img/Ellipse109.jpg" alt="Петрова Анна"
-                srcset="img/Ellipse109@2x.jpg 2x">
-              <h3 class="teachers-name">
-                Петрова Анна
-              </h3>
-              <p class="teachers-info">
-                Внедрение современных методик способствует подготовке и реализации системы массового участия. Но
-                постоянный количественный рост и сфера нашей активности требует от нас анализа существующих финансовых и
-                административных условий. Значимость этих проблем настолько очевидна, что высокое качество позиционных.
-              </p>
-            </li>
-            <li class="teachers-list__item">
-              <img class="teachers-photo" width="260" height="260" src="img/Ellipse110.jpg" alt="Колодкина Мария"
-                srcset="img/Ellipse110@2x.jpg 2x">
-              <h3 class="teachers-name">
-                Колодкина Мария
-              </h3>
-              <p class="teachers-info">
-                Равным образом, консультация с широким активом не даёт нам иного выбора, кроме определения позиций,
-                занимаемых участниками в отношении поставленных задач. Не следует, однако, забывать, что современная
-                методология разработки предполагает независимые способы реализации как самодостаточных, так и внешне
-                зависимых.
-              </p>
-            </li>
-            <li class="teachers-list__item">
-              <img class="teachers-photo" width="260" height="260" src="img/Ellipse111.jpg" alt="Вазген Арменов"
-                srcset="img/Ellipse111@2x.jpg 2x">
-              <h3 class="teachers-name">
-                Вазген Арменов
-              </h3>
-              <p class="teachers-info">
-                Предварительные выводы неутешительны: глубокий уровень погружения создаёт предпосылки для кластеризации
-                усилий. А ещё активно развивающиеся страны третьего мира подвергнуты целой серии независимых
-                исследований. Не следует, однако, забывать, что сложившаяся структура организации требует от нас анализа
-                экономической.
-              </p>
-            </li>
-          </ul>
+
+        <div class="slider" id="slider-1">
+          <div class="about-us__teachers slider__wrapper">
+            <ul class="teachers-list slider__items">
+              <li class="teachers-list__item slider__item">
+                <img class="teachers-photo slider__item_photo" width="260" height="260" src="img/Ellipse108.jpg"
+                  alt="Иванов Иван"
+                srcset="img/Ellipse108@2x.jpg 2x">
+                <span class="teachers-list__text">
+                  <h3 class="teachers-name slider__item_name">
+                    Иванов Иван
+                  </h3>
+                  <p class="teachers-info slider__item_text">
+                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+                    факта: высокое качество позиционных исследований предоставляет широкие возможности для стандартных
+                    подходов. Следует отметить, что сложившаяся структура организации позволяет выполнить важные задания по
+                    разработке.
+                  </p>
+                </span>
+              </li>
+              <li class="teachers-list__item slider__item">
+                <img class="teachers-photo slider__item_photo" width="260" height="260" src="img/Ellipse109.jpg"
+                  alt="Петрова Анна"
+                  srcset="img/Ellipse109@2x.jpg 2x">
+                <h3 class="teachers-name slider__item_name">
+                  Петрова Анна
+                </h3>
+                <p class="teachers-info slider__item_text">
+                  Внедрение современных методик способствует подготовке и реализации системы массового участия. Но
+                  постоянный количественный рост и сфера нашей активности требует от нас анализа существующих финансовых и
+                  административных условий. Значимость этих проблем настолько очевидна, что высокое качество позиционных.
+                </p>
+              </li>
+              <li class="teachers-list__item slider__item">
+                <img class="teachers-photo slider__item_photo" width="260" height="260" src="img/Ellipse110.jpg"
+                  alt="Колодкина Мария"
+                  srcset="img/Ellipse110@2x.jpg 2x">
+                <h3 class="teachers-name slider__item_name">
+                  Колодкина Мария
+                </h3>
+                <p class="teachers-info slider__item_text">
+                  Равным образом, консультация с широким активом не даёт нам иного выбора, кроме определения позиций,
+                  занимаемых участниками в отношении поставленных задач. Не следует, однако, забывать, что современная
+                  методология разработки предполагает независимые способы реализации как самодостаточных, так и внешне
+                  зависимых.
+                </p>
+              </li>
+              <li class="teachers-list__item slider__item">
+                <img class="teachers-photo slider__item_photo" width="260" height="260" src="img/Ellipse111.jpg"
+                  alt="Вазген Арменов"
+                  srcset="img/Ellipse111@2x.jpg 2x">
+                <h3 class="teachers-name slider__item_name">
+                  Вазген Арменов
+                </h3>
+                <p class="teachers-info slider__item_text">
+                  Предварительные выводы неутешительны: глубокий уровень погружения создаёт предпосылки для кластеризации
+                  усилий. А ещё активно развивающиеся страны третьего мира подвергнуты целой серии независимых
+                  исследований. Не следует, однако, забывать, что сложившаяся структура организации требует от нас анализа
+                  экономической.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- Стрелки для перехода к предыдущему и следующему слайду -->
+          <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+          <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
         </div>
       </div>
     </section>
-    <section class="directions">
-      <div class="directions__wrapper slider">
+
+    <section class="directions slider" id="slider-2">
+      <div class="directions__wrapper slider__wrapper">
         <h2 class="visually-hidden">Наши направления</h2>
         <header class="directions__header">
           <h2 class="directions__header--title">Направления</h2>
         </header>
-        <ul class="directions__list slider__list">
+        <ul class="directions__list slider__items">
           <li class="directions__item directions__item--dancehall slider__item">
-            <h3 class="directions__title">Dancehall</h3>
+            <h3 class="directions__title slider__item_name">Dancehall</h3>
             <video width="300" height="230" controls loop preload="auto">
               <source src="videos/dancehall.mp4" type="video/mp4">
               <source src="videos/dancehall.webm" type="video/webm">
               Your browser does not support HTML5 video.
             </video>
-            <p class="directions__description">вторник и четверг<br>19.00-20.00</p>
+            <p class="directions__description slider__item_post">вторник и четверг<br>19.00-20.00</p>
           </li>
           <li class="directions__item directions__item--jazzfunk slider__item">
-            <h3 class="directions__title">Jazzfunk</h3>
+            <h3 class="directions__title slider__item_name">Jazzfunk</h3>
             <video width="300" height="230" controls loop preload="auto">
               <source src="videos/jazzfunk2.mp4" type="video/mp4">
               <source src="videos/jazzfunk2.webm" type="video/webm">
               Your browser does not support HTML5 video.
             </video>
-            <p class="directions__description">среда и пятница<br>19.30 - 20.30</p>
+            <p class="directions__description slider__item_post">среда и пятница<br>19.30 - 20.30</p>
           </li>
           <li class="directions__item directions__item--shuffle slider__item">
-            <h3 class="directions__title">Shuffle dance</h3>
+            <h3 class="directions__title slider__item_name">Shuffle dance</h3>
             <video width="300" height="230" controls loop preload="metadata ">
               <source src="videos/shuffle.mp4" type="video/mp4">
               <source src="videos/shuffle.webm" type="video/webm">
               Your browser does not support HTML5 video.
             </video>
-            <p class="directions__description">вторник и четверг<br>20.00 - 21.00</p>
+            <p class="directions__description slider__item_post">вторник и четверг<br>20.00 - 21.00</p>
           </li>
           <li class="directions__item directions__item--mix slider__item">
-            <h3 class="directions__title">Mix dance 35+</h3>
+            <h3 class="directions__title slider__item_name">Mix dance 35+</h3>
             <video width="300" height="230" controls loop preload="auto">
               <source src="videos/mix35.mp4" type="video/mp4">
               <source src="videos/mix35.webm" type="video/webm">
               Your browser does not support HTML5 video.
             </video>
-            <p class="directions__description">вторник и четверг<br>19.00 - 20.00</p>
+            <p class="directions__description slider__item_post">вторник и четверг<br>19.00 - 20.00</p>
           </li>
           <li class="directions__item directions__item--hip-hop slider__item">
-            <h3 class="directions__title">Hip-hop</h3>
+            <h3 class="directions__title slider__item_name">Hip-hop</h3>
             <video width="300" height="230" controls loop preload="auto">
               <source src="videos/hip-hop.mp4" type="video/mp4">
               <source src="videos/hip-hop.webm" type="video/webm">
               Your browser does not support HTML5 video.
             </video>
-            <p class="directions__description">среда и пятница<br>19.30 - 20.30</p>
+            <p class="directions__description slider__item_post">среда и пятница<br>19.30 - 20.30</p>
           </li>
           <li class="directions__item directions__item--k-pop slider__item">
-            <h3 class="directions__title">K-pop</h3>
+            <h3 class="directions__title slider__item_name">K-pop</h3>
             <video width="300" height="230" controls loop preload="auto">
               <source src="videos/k-pop.mp4" type="video/mp4">
               <source src="videos/k-pop.webm" type="video/webm">
               Your browser does not support HTML5 video.
             </video>
-            <p class="directions__description">суббота и воскресенье<br>16.00-17.30</p>
+            <p class="directions__description slider__item_post">суббота и воскресенье<br>16.00-17.30</p>
           </li>
           <li class="directions__item directions__item--stretch slider__item">
-            <h3 class="directions__title">Шпагат</h3>
+            <h3 class="directions__title slider__item_name">Шпагат</h3>
             <video poster="videos/poster-stretch.png" width="300" height="230" controls loop preload="none">
               <source src="videos/stretch.mp4" type="video/mp4">
               <source src="videos/stretch.webm" type="video/webm">
               Your browser does not support HTML5 video.
             </video>
-            <p class="directions__description">понедельник, среда, пятница<br>18.30 - 19.30</p>
+            <p class="directions__description slider__item_post">понедельник, среда, пятница<br>18.30 - 19.30</p>
           </li>
           <li class="directions__item directions__item--back slider__item">
-            <h3 class="directions__title">Здоровая спина</h3>
+            <h3 class="directions__title slider__item_name">Здоровая спина</h3>
             <video width="300" height="230" controls loop preload="auto">
               <source src="videos/back.mp4" type="video/mp4">
               <source src="videos/back.webm" type="video/webm">
               Your browser does not support HTML5 video.
             </video>
-            <p class="directions__description">вторник и четверг<br>18.00 - 19.00</p>
+            <p class="directions__description slider__item_post">вторник и четверг<br>18.00 - 19.00</p>
           </li>
           <li class="directions__item directions__item--mix-kid slider__item">
-            <h3 class="directions__title">Комплексные тренировки для детей<br>от 4 и до 16 лет</h3>
+            <h3 class="directions__title slider__item_name">Комплексные тренировки для детей<br>от 4 и до 16 лет</h3>
             <video width="300" height="230" controls loop preload="auto">
               <source src="videos/mix-child.mp4" type="video/mp4">
               <source src="videos/mix-child.webm" type="video/webm">
               Your browser does not support HTML5 video.
             </video>
-            <p class="directions__description">(уличный танец+растяжка +акробатика<br>+основы классического танца)</p>
+            <p class="directions__description slider__item_post">(уличный танец+растяжка +акробатика<br>+основы
+              классического танца)</p>
           </li>
         </ul>
-        <p class="descriptions__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-          <button class="slider__toggle" type="button">4</button>
-          <button class="slider__toggle" type="button">5</button>
-          <button class="slider__toggle" type="button">6</button>
-          <button class="slider__toggle" type="button">7</button>
-          <button class="slider__toggle" type="button">8</button>
-          <button class="slider__toggle" type="button">9</button>
-        </p>
       </div>
+      <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+      <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
     </section>
+
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <h2 class="reviews__title">Отзывы о нас</h2>
