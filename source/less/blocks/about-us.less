@@ -60,7 +60,7 @@
   background-color: @darkwhite;
   margin: 20px 20px 25px 20px;
   min-width: calc(100% - 82px);
-  min-height: 515px;
+  min-height: 400px;
   border-radius: 20px;
   padding: 0;
   // outline: 5px solid rgba(0, 0, 255, 0.8);
@@ -76,10 +76,13 @@
     margin: 0;
     padding: 0;
     outline: 5px solid rgba(0, 0, 255, 0.8);
-  outline-offset: -2px;
+    outline-offset: -2px;
 
     @media (min-width: @tablet-width) {
     flex-direction: row;
+    width: auto;
+    min-height: 350px;
+
     }
   }
 }
@@ -90,10 +93,13 @@
   width: 260px;
   height: 260px;
   margin: 10px auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 45px 0 45px 25px;
+  }
 }
 
 .teachers-name {
-  margin: 0;
   padding: 0;
   font-family: "Montserrat";
   font-style: normal;
@@ -102,10 +108,9 @@
   line-height: 26px;
   /* or 130% */
   color: @black;
-
   display: block;
   text-align: center;
-  margin: 10px 0;
+  margin: 10px 0 10px 10px;
 }
 
 .teachers-info {
