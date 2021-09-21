@@ -7,6 +7,8 @@
     &__wrapper {
     margin: 0;
     padding: 0;
+    outline: 5px solid rgba(255, 0, 242, 0.8);
+    outline-offset: -2px;
   }
 
     &__header {
@@ -24,6 +26,8 @@
     font-style: normal;
     font-size: 24px;
     line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
     &__intro {
@@ -58,20 +62,20 @@
 }
 
 .teachers-list {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-start;
   list-style: none;
-  background-color: @darkwhite;
+  // background-color: @darkwhite;
   margin: 20px 20px 25px 20px;
   min-width: calc(100% - 40px);
   min-height: 400px;
-  border-radius: 20px;
+  // border-radius: 20px;
   padding: 0;
   overflow: hidden;
-  outline: 5px solid rgba(0, 255, 21, 0.8);
+  outline: 5px solid rgba(0, 247, 255, 0.8);
   outline-offset: -2px;
 
     @media (min-width: @tablet-width) {
@@ -93,15 +97,15 @@
     justify-content: space-evenly;
     align-items: center;
 
-    min-width: 280px;
-    min-height: 520px;
+    // min-width: 280px;
+    // min-height: 520px;
 
     outline: 5px solid rgba(0, 0, 255, 0.8);
     outline-offset: -2px;
 
     @media (min-width: @tablet-width) {
       flex-direction: row;
-      max-width: 600px;
+      max-width: 640px;
       min-height: 350px;
       flex-wrap: wrap;
     }
