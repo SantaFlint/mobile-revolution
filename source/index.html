@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Революция танца</title>
-  <link href="css/style.css" rel="stylesheet">
-  <meta name="viewport" content="width = device-width, initial-scale = 1.0">
-  <meta name="format-detection" content="telephone=no">
   <!-- Подключаем CSS слайдера -->
   <link href="css/simple-adaptive-slider.css" rel="stylesheet">
   <!-- Подключаем JS слайдера -->
   <script defer src="js/simple-adaptive-slider.js"></script>
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+  <meta name="format-detection" content="telephone=no">
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       // инициализация 1 слайдера с нужными настройками
@@ -167,8 +168,8 @@
 
         <div class="slider" id="slider-1">
           <div class="about-us__teachers slider__wrapper">
-            <ul class="teachers-list slider__items">
-              <li class="teachers-list__item slider__item">
+            <div class="teachers-list slider__items">
+              <div class="teachers-list__item slider__item">
                 <img class="teachers-photo slider__item_photo" width="260" height="260" src="img/Ellipse108.jpg"
                   alt="Иванов Иван"
                 srcset="img/Ellipse108@2x.jpg 2x">
@@ -183,8 +184,8 @@
                     разработке.
                   </p>
                 </span>
-              </li>
-              <li class="teachers-list__item slider__item">
+              </div>
+              <div class="teachers-list__item slider__item">
                 <img class="teachers-photo slider__item_photo" width="260" height="260" src="img/Ellipse109.jpg"
                   alt="Петрова Анна"
                   srcset="img/Ellipse109@2x.jpg 2x">
@@ -196,8 +197,8 @@
                   постоянный количественный рост и сфера нашей активности требует от нас анализа существующих финансовых и
                   административных условий. Значимость этих проблем настолько очевидна, что высокое качество позиционных.
                 </p>
-              </li>
-              <li class="teachers-list__item slider__item">
+              </div>
+              <div class="teachers-list__item slider__item">
                 <img class="teachers-photo slider__item_photo" width="260" height="260" src="img/Ellipse110.jpg"
                   alt="Колодкина Мария"
                   srcset="img/Ellipse110@2x.jpg 2x">
@@ -210,8 +211,8 @@
                   методология разработки предполагает независимые способы реализации как самодостаточных, так и внешне
                   зависимых.
                 </p>
-              </li>
-              <li class="teachers-list__item slider__item">
+              </div>
+              <div class="teachers-list__item slider__item">
                 <img class="teachers-photo slider__item_photo" width="260" height="260" src="img/Ellipse111.jpg"
                   alt="Вазген Арменов"
                   srcset="img/Ellipse111@2x.jpg 2x">
@@ -224,12 +225,12 @@
                   исследований. Не следует, однако, забывать, что сложившаяся структура организации требует от нас анализа
                   экономической.
                 </p>
-              </li>
-            </ul>
+              </div>
+            </div>
+            <!-- Стрелки для перехода к предыдущему и следующему слайду -->
+            <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+            <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
           </div>
-          <!-- Стрелки для перехода к предыдущему и следующему слайду -->
-          <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
-          <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
         </div>
       </div>
     </section>
@@ -243,7 +244,7 @@
         <ul class="directions__list slider__items">
           <li class="directions__item directions__item--dancehall slider__item">
             <h3 class="directions__title slider__item_name">Dancehall</h3>
-            <video width="300" height="230" controls loop preload="auto">
+            <video class="directions__video" width="300" height="230" controls loop preload="auto">
               <source src="videos/dancehall.mp4" type="video/mp4">
               <source src="videos/dancehall.webm" type="video/webm">
               Your browser does not support HTML5 video.
@@ -252,7 +253,7 @@
           </li>
           <li class="directions__item directions__item--jazzfunk slider__item">
             <h3 class="directions__title slider__item_name">Jazzfunk</h3>
-            <video width="300" height="230" controls loop preload="auto">
+            <video class="directions__video" width="300" height="230" controls loop preload="auto">
               <source src="videos/jazzfunk2.mp4" type="video/mp4">
               <source src="videos/jazzfunk2.webm" type="video/webm">
               Your browser does not support HTML5 video.
@@ -261,7 +262,7 @@
           </li>
           <li class="directions__item directions__item--shuffle slider__item">
             <h3 class="directions__title slider__item_name">Shuffle dance</h3>
-            <video width="300" height="230" controls loop preload="metadata ">
+            <video class="directions__video" width="300" height="230" controls loop preload="metadata ">
               <source src="videos/shuffle.mp4" type="video/mp4">
               <source src="videos/shuffle.webm" type="video/webm">
               Your browser does not support HTML5 video.
@@ -270,7 +271,7 @@
           </li>
           <li class="directions__item directions__item--mix slider__item">
             <h3 class="directions__title slider__item_name">Mix dance 35+</h3>
-            <video width="300" height="230" controls loop preload="auto">
+            <video class="directions__video" width="300" height="230" controls loop preload="auto">
               <source src="videos/mix35.mp4" type="video/mp4">
               <source src="videos/mix35.webm" type="video/webm">
               Your browser does not support HTML5 video.
@@ -279,7 +280,7 @@
           </li>
           <li class="directions__item directions__item--hip-hop slider__item">
             <h3 class="directions__title slider__item_name">Hip-hop</h3>
-            <video width="300" height="230" controls loop preload="auto">
+            <video class="directions__video" width="300" height="230" controls loop preload="auto">
               <source src="videos/hip-hop.mp4" type="video/mp4">
               <source src="videos/hip-hop.webm" type="video/webm">
               Your browser does not support HTML5 video.
@@ -288,7 +289,7 @@
           </li>
           <li class="directions__item directions__item--k-pop slider__item">
             <h3 class="directions__title slider__item_name">K-pop</h3>
-            <video width="300" height="230" controls loop preload="auto">
+            <video class="directions__video" width="300" height="230" controls loop preload="auto">
               <source src="videos/k-pop.mp4" type="video/mp4">
               <source src="videos/k-pop.webm" type="video/webm">
               Your browser does not support HTML5 video.
@@ -297,7 +298,8 @@
           </li>
           <li class="directions__item directions__item--stretch slider__item">
             <h3 class="directions__title slider__item_name">Шпагат</h3>
-            <video poster="videos/poster-stretch.png" width="300" height="230" controls loop preload="none">
+            <video class="directions__video" poster="videos/poster-stretch.png" width="300" height="230" controls loop
+              preload="none">
               <source src="videos/stretch.mp4" type="video/mp4">
               <source src="videos/stretch.webm" type="video/webm">
               Your browser does not support HTML5 video.
@@ -306,7 +308,7 @@
           </li>
           <li class="directions__item directions__item--back slider__item">
             <h3 class="directions__title slider__item_name">Здоровая спина</h3>
-            <video width="300" height="230" controls loop preload="auto">
+            <video class="directions__video" width="300" height="230" controls loop preload="auto">
               <source src="videos/back.mp4" type="video/mp4">
               <source src="videos/back.webm" type="video/webm">
               Your browser does not support HTML5 video.
@@ -315,7 +317,7 @@
           </li>
           <li class="directions__item directions__item--mix-kid slider__item">
             <h3 class="directions__title slider__item_name">Комплексные тренировки для детей<br>от 4 и до 16 лет</h3>
-            <video width="300" height="230" controls loop preload="auto">
+            <video class="directions__video" width="300" height="230" controls loop preload="auto">
               <source src="videos/mix-child.mp4" type="video/mp4">
               <source src="videos/mix-child.webm" type="video/webm">
               Your browser does not support HTML5 video.

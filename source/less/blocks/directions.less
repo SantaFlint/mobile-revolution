@@ -1,11 +1,11 @@
 .directions__wrapper {
   margin: 0;
   padding: 0;
-  max-width: 100%;
+  width: 100%;
   max-height: 100%;
   outline: 5px solid rgba(0, 255, 13, 0.8);
   outline-offset: -2px;
-  background-color: @white;
+  background-color: @darkgrey;
 }
 
 .directions__header {
@@ -35,6 +35,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  max-width: 100%;
+  // outline: 5px solid rgba(0, 255, 13, 0.8);
+  // outline-offset: -2px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 640px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+  }
 
   &__item {
     margin: 0;
@@ -79,4 +90,10 @@
   text-align: center;
 
   color: @darkwhite;
+}
+
+.directions__video {
+  display: block;
+  position: relative;
+  margin: 0 auto;
 }

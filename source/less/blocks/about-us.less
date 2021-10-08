@@ -1,7 +1,7 @@
 .about-us {
   min-height: 580px;
   background-color: @darkgrey;
-  // outline: 5px solid rgba(0, 0, 255, 0.8);
+  // outline: 5px solid rgba(255, 0, 0, 0.8);
   // outline-offset: -2px;
 
     &__wrapper {
@@ -56,30 +56,32 @@
       background-color: @white;
 
       @media (max-width: @mobile-width-only) {
-        min-height: auto;
+        min-height:215px;
       }
     }
 }
 
 .teachers-list {
-  position: relative;
+  // position: relative;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: flex-start;
+
+  // justify-content: flex-start;
   list-style: none;
   // background-color: @darkwhite;
-  margin: 20px 20px 25px 20px;
+  margin: 20px 0;
   min-width: calc(100% - 40px);
+  width: 100%;
   min-height: 400px;
   // border-radius: 20px;
   padding: 0;
-  overflow: hidden;
+  // overflow: hidden;
   outline: 5px solid rgba(0, 247, 255, 0.8);
   outline-offset: -2px;
 
     @media (min-width: @tablet-width) {
-      max-width: 728px;
+      max-width: 640px;
     }
 
     @media (min-width: @desktop-width) {
@@ -97,17 +99,19 @@
     justify-content: space-evenly;
     align-items: center;
 
-    // min-width: 280px;
-    // min-height: 520px;
+    min-width: 320px;
+    max-width: max-content;
+    min-height: 520px;
+    background: none;
 
     outline: 5px solid rgba(0, 0, 255, 0.8);
     outline-offset: -2px;
 
     @media (min-width: @tablet-width) {
       flex-direction: row;
-      max-width: 640px;
-      min-height: 350px;
       flex-wrap: wrap;
+      max-width: 640px;
+      min-height: 215px;
     }
 
     @media (min-width: @desktop-width) {
