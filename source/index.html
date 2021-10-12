@@ -28,6 +28,13 @@
         interval: 5000,
         swipe: true,
       });
+      // инициализация 3 слайдера с нужными настройками
+      new SimpleAdaptiveSlider('#slider-3', {
+      loop: true,
+      autoplay: false,
+      interval: 5000,
+      swipe: true,
+      });
     });
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -343,8 +350,8 @@
         <a class="reviews__write button" href="form.html">Оставить свой</a>
         <div class="reviews__list slider__items">
           <blockquote class="reviews__item slider__item">
-            <img class="reviews__author-image" src="img/picture-travis-mobile@x1.jpg" width="50" height="33"
-              alt="Фото Трэвиса Баркера">
+            <img class="reviews__author-image" src="img/photo.jpg" width="50" height="33"
+              alt="Фото Трэвиса Баркера" srcset="img/photo@2x.jpg 2x">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Трэвис Баркер</cite>
               <p class="reviews__text">
@@ -353,8 +360,8 @@
             </div>
           </blockquote>
           <blockquote class="reviews__item slider__item">
-            <img class="reviews__author-image" src="img/picture-travis-mobile@x1.jpg" width="50" height="33"
-              alt="Фото Трэвиса Баркера">
+            <img class="reviews__author-image" src="img/photo.jpg" width="50" height="33" alt="Фото Трэвиса Баркера"
+              srcset="img/photo@2x.jpg 2x">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Трэвис Баркер</cite>
               <p class="reviews__text">
@@ -363,8 +370,8 @@
             </div>
           </blockquote>
           <blockquote class="reviews__item slider__item">
-            <img class="reviews__author-image" src="img/picture-travis-mobile@x1.jpg" width="50" height="33"
-              alt="Фото Трэвиса Баркера">
+            <img class="reviews__author-image" src="img/photo.jpg" width="50" height="33" alt="Фото Трэвиса Баркера"
+              srcset="img/photo@2x.jpg 2x">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Трэвис Баркер</cite>
               <p class="reviews__text">
@@ -372,15 +379,18 @@
               </p>
             </div>
           </blockquote>
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
+          <!-- <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next" type="button">Следующий отзыв</button> -->
         </div>
-        <p class="reviews__toggles slider__toggles">
+        <!-- <p class="reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
-        </p>
+        </p> -->
+        <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+        <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
       </div>
+
     </section>
   </main>
   <footer class="page-footer">
