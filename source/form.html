@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Революция танца</title>
+  <!-- Подключаем CSS слайдера -->
+  <link href="css/simple-adaptive-slider.css" rel="stylesheet">
+  <!-- Подключаем JS слайдера -->
+  <script defer src="js/simple-adaptive-slider.js"></script>
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+  <meta name="format-detection" content="telephone=no">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // инициализация 1 слайдера с нужными настройками
+      new SimpleAdaptiveSlider('#slider-1', {
+        loop: true,
+        autoplay: false,
+        interval: 5000,
+        swipe: true,
+      });
+      // инициализация 2 слайдера с нужными настройками
+      new SimpleAdaptiveSlider('#slider-2', {
+        loop: true,
+        autoplay: false,
+        interval: 5000,
+        swipe: true,
+      });
+      // инициализация 3 слайдера с нужными настройками
+      new SimpleAdaptiveSlider('#slider-3', {
+        loop: true,
+        autoplay: false,
+        interval: 5000,
+        swipe: true,
+      });
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+          $('.scrollup').fadeIn();
+        } else {
+          $('.scrollup').fadeOut();
+        }
+      });
+
+      $('.scrollup').click(function () {
+        $("html, body").animate({
+          scrollTop: 0
+        }, 600);
+        return false;
+      });
+    });
+  </script>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1200px" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px" srcset="img/logo-tablet.svg">
+        <img src="img/header-logo__mobile.svg" width="300" height="30" alt="Студия современной хореографии
+            Революция танца">
+      </picture>
+    </a>
+    <nav class="main-nav main-nav__closed main-nav__nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню
+        </span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item scrollto">
+            <a href="#about-us">О нас</a>
+          </li>
+          <li class="site-list__item site-list__item--active scrollto">
+            <a href="#slider-2">
+              Наши направления
+            </a>
+          </li>
+          <li class="site-list__item scrollto">
+            <a href="#slider-3">
+              Отзывы
+            </a>
+          </li>
+          <li class="site-list__item scrollto">
+            <a href="#contacts">
+              Контакты
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__js js-user" href="signup.html">
+              <svg class="user-list__js-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.44444 7.11111C3.95352 7.11111 3.55556 7.50908 3.55556 8C3.55556 8.49092 3.95352 8.88889 4.44444 8.88889H11.5195C12.0105 8.88889 12.4084 8.49092 12.4084 8C12.4084 7.50908 12.0105 7.11111 11.5195 7.11111H4.44444Z"
+                  fill="white" />
+                <path
+                  d="M4.48047 10.7258C3.98955 10.7258 3.59158 11.1238 3.59158 11.6147C3.59158 12.1056 3.98955 12.5036 4.48047 12.5036H11.5556C12.0465 12.5036 12.4444 12.1056 12.4444 11.6147C12.4444 11.1238 12.0465 10.7258 11.5556 10.7258H4.48047Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.77778 0C0.795938 0 0 0.795938 0 1.77778V14.2222C0 15.2041 0.795938 16 1.77778 16H14.2222C15.2041 16 16 15.2041 16 14.2222V1.77778C16 0.795938 15.2041 0 14.2222 0H1.77778ZM3.55556 1.77778H1.77778L1.77778 14.2222H14.2222V1.77778H12.4444V2.66667C12.4444 4.13943 11.2505 5.33333 9.77778 5.33333H6.22222C4.74946 5.33333 3.55556 4.13943 3.55556 2.66667V1.77778ZM5.33333 1.77778V2.66667C5.33333 3.15759 5.7313 3.55556 6.22222 3.55556H9.77778C10.2687 3.55556 10.6667 3.15759 10.6667 2.66667V1.77778H5.33333Z"
+                  fill="white" />
+              </svg>
+              <span>Записаться</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        $('.scrollto a').on('click', function () {
+
+          let href = $(this).attr('href');
+
+          $('html, body').animate({
+            scrollTop: $(href).offset().top
+          }, {
+            duration: 600, // по умолчанию «400»
+            easing: "linear" // по умолчанию «swing»
+          });
+
+          return false;
+        });
+      </script>
+    </nav>
+  </header>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav__nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav__closed')) {
+        navMain.classList.remove('main-nav__closed');
+        navMain.classList.add('main-nav__opened');
+      } else {
+        navMain.classList.add('main-nav__closed');
+        navMain.classList.remove('main-nav__opened');
+      }
+    });
+  </script>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">
+      Студия современной хореографии «Революция танца»
+    </h1>
+
+
+  </main>
+  <footer class="page-footer">
+    <svg viewBox="0 0 320 34" height="34px" width="100%" fill="none" xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none">
+      <path d="M320 34H160L320 0V34Z" fill="#292929" />
+      <path d="M0 34H160L0 0V34Z" fill="#292929" />
+    </svg>
+
+    <div class="page-footer__wrapper" id="contacts">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">Революция танца</b>
+        <a class="contacts__text" href="https://go.2gis.com/24bf5j">
+          г. Благовещенск,<br>ул. Политехническая 3
+        </a>
+        <a class="contacts__phone" href="tel:+79638001940">
+          <span class="contacts__phone-mobile">Тел.:</span>+7 (963) 800-19-40
+        </a>
+      </div>
+      <div class="page-footer__socials social">
+        <b class="social__title"><span>Давайте дружить!</span></b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--youtube"
+              href="https://www.youtube.com/channel/UCF4tVT-jNXHGHyLLALIeQwA">
+              <img src="icons/icon-youtube.svg"><span>Мы на YouTube</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--tiktok" href="https://www.tiktok.com/@revolution_of_dance_blag">
+              <img src="icons/TikTok-Negative.svg"><span>Мы в TikTok</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram"
+              href="https://instagram.com/revolution_of_dance.blag?igshid=1sb0gz5w77gua">
+              <img src="icons/instagram-icon.svg"><span>Мы в Instgram</span></a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright--text">©2021 Революция танца</p>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="scrollup">Наверх</a>
+</body>
+
+</html>
